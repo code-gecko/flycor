@@ -31,5 +31,3 @@ const App = () => (
     </CartProvider>
   </TooltipProvider>
 );
-
-export default App;
