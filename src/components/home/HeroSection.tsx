@@ -6,7 +6,7 @@ import farmFieldBg from "@/assets/farm/farm-field.jpg";
 export function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${farmFieldBg})` }}
       >
@@ -15,13 +15,12 @@ export function HeroSection() {
 
       <div className="container relative mx-auto px-4 lg:px-8 py-20">
         <div className="max-w-2xl text-primary-foreground">
-          
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            FLYCORP FARMS
+            FLYCORPS FARMS
           </h1>
-          
+
           <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Integrated Agribusiness focused on sustainable food production, 
+            Integrated agribusiness focused on sustainable food production, 
             climate-smart innovations, and value addition. We combine crops, 
             livestock, and processing for a circular farming approach.
           </p>
@@ -37,7 +36,7 @@ export function HeroSection() {
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
-            
+
             <Button
               size="lg"
               variant="outline"
@@ -68,6 +67,7 @@ export function HeroSection() {
         </div>
       </div>
 
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 rounded-full border-2 border-primary-foreground/50 flex items-start justify-center p-2">
           <div className="w-1 h-2 bg-primary-foreground/50 rounded-full" />
