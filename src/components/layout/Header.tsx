@@ -24,9 +24,14 @@ export function Header() {
       <nav className="container mx-auto px-4 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Flycorp Farms" className="h-12 w-auto" />
+            <img 
+              src={logo} 
+              alt="Flycorps Farms" 
+              className="h-12 w-auto" 
+            />
           </Link>
 
+          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
@@ -44,9 +49,9 @@ export function Header() {
             ))}
           </div>
 
+          {/* Actions */}
           <div className="flex items-center gap-4">
             <CartSheet />
-
             <Button
               className="hidden sm:flex bg-primary hover:bg-primary/90 text-primary-foreground"
               asChild
@@ -54,6 +59,7 @@ export function Header() {
               <Link to="/shop">Shop Now</Link>
             </Button>
 
+            {/* Mobile Menu Button */}
             <Button
               variant="ghost"
               size="icon"
@@ -66,6 +72,7 @@ export function Header() {
           </div>
         </div>
 
+        {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-2">
