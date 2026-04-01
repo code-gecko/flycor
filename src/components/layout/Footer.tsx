@@ -27,10 +27,10 @@ export function Footer() {
           {/* Brand Section */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <img src={logo} alt="Flycorp Farms" className="h-12 w-auto" />
+              <img src={logo} alt="Flycorps Farms" className="h-12 w-auto" />
             </Link>
             <p className="text-sm opacity-80 leading-relaxed">
-              Sustainable food production, climate-smart innovations, and value addition. 
+              Sustainable food production, climate-smart innovations, and value addition.
               We combine crops, livestock, and processing for a circular farming approach.
             </p>
             <div className="flex gap-4 pt-2">
@@ -119,10 +119,16 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Bottom Bar with "Made by Mo" */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
-          <p className="text-sm text-center opacity-80">
-            &copy; {new Date().getFullYear()} Flycorp Farms. Enabling Agriculture. All rights reserved.
-          </p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-80">
+            <p>
+              &copy; {new Date().getFullYear()} Flycorps Farms. Enabling Agriculture. All rights reserved.
+            </p>
+            <p className="text-xs">
+              Made by Mo
+            </p>
+          </div>
         </div>
       </div>
     </footer>
